@@ -41,7 +41,7 @@ const {
 } = require("react-firebase-hooks/firestore");
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "one-voice-a085d.firebaseapp.com",
   projectId: "one-voice-a085d",
   storageBucket: "one-voice-a085d.appspot.com",
