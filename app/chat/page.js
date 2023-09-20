@@ -14,7 +14,7 @@ export default function Chat() {
   const suid = searchParams.get("user");
   const [anonUser, setAnonUser] = useState("");
   const [registered, setRegistered] = useState(false);
-  const allLanguages = ["en", "es", "fr"];
+  const allLanguages = ["en", "es", "fr", "zh-ch"];
 
   //console.log("user id " + suid + "session id" + session);
   const { data, add, remove } = useCollection(
