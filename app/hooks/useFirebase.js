@@ -40,7 +40,15 @@ const {
   useDocumentData,
 } = require("react-firebase-hooks/firestore");
 
-const firebaseConfig = require("../firebaseConfig.json");
+const firebaseConfig = {
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: "one-voice-a085d.firebaseapp.com",
+  projectId: "one-voice-a085d",
+  storageBucket: "one-voice-a085d.appspot.com",
+  messagingSenderId: "203375590843",
+  appId: "1:203375590843:web:5cf71f10f7d9049d9dd89e",
+  measurementId: "G-D3BB4Z2JCF",
+};
 
 const FirebaseContext = createContext();
 const FirestoreContext = createContext();

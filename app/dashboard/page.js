@@ -8,7 +8,7 @@ export default function Dashboard() {
   const searchParams = useSearchParams();
   const uid = searchParams.get("uid");
   const router = useRouter();
-  const { data, add } = useCollection(user ? `/users/${uid}/sessions/` : null);
+  const { data, add } = useCollection(uid ? `/users/${uid}/sessions/` : null);
 
   function createNewSession() {
     //TODO language setting on signup
