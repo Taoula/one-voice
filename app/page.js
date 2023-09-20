@@ -8,8 +8,8 @@ export default function Home() {
   const { user, signInWithPopup } = useAuth();
 
   function signInWithGoogle() {
-    signInWithPopup().then(() => {
-      router.push(`/dashboard/?uid=${user.uid}`);
+    signInWithPopup().then((u) => {
+      router.push(`/dashboard/?uid=${u.uid}`);
     });
   }
 
